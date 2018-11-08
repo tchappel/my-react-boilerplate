@@ -47,9 +47,9 @@ module.exports = {
       // regEx meaning "all files that end with .scss or .css" 
       use: [
         // property "use" is same as "loader", but it allows for an array of loaders to be applied
-        'style-loader',
-        'css-loader',
-        'sass-loader'
+        'style-loader',  // inject CSS to page
+        'css-loader', // translates CSS into CommonJS modules
+        'sass-loader' // compiles Sass/SCSS to CSS
       ]
     }]
   },
